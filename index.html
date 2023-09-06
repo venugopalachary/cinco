@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/cincoimg/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/cincoimg/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/cincoimg/icon/favicon-16x16.png" sizes="16x16">
 
 <!-- Include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -129,8 +129,71 @@
 .whats-float:hover i  {
     transform:rotate(360deg);
 }
-
+.owl-carousel img {
+    max-width: 280px;
+    height: 270px;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+}
+img {
+    max-width: 370px;
+    height: 350px;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+}
+.footer-logo img {
+    max-width: 200px;
+    height: 150px;
     
+}
+.footer {
+    
+    display: block;
+    padding: 80px 0 75px;
+}
+
+
+.footer-area:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background-color: #ffffffd9;
+	color: black;
+    z-index: -1;
+}
+.single-footer-widget .title h3 {
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.single-footer-widget .footer-contact-info ul li .text p a {
+    color: black;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+.center-list a{
+color: black;
+}
+.copyright-text p a {
+    color: black;
+    font-weight: 700;
+    
+}
+.logo a img {
+    width: 90px;
+    height: 90px;
+}
+
+
     </style>
     
 </head>
@@ -180,7 +243,7 @@
                 <!--Start Header Left-->
                 <div class="header-left clearfix pull-left">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo/cinco.jpg" alt="Awesome Logo" style="width:50%" title=""></a>
+                        <a href="index.html"><img src="assets/images/cincoimg/icon/Logo-png.png" alt="Awesome Logo" style="width:100%" title=""></a>
                     </div>
                 </div>
                 <!--End Header Left-->
@@ -241,7 +304,7 @@
                         <div class="clearfix">
                             <!--Logo-->
                             <div class="logo float-left">
-                                <a href="index.html" class="img-responsive"><img src="assets/images/logo/cinco.jpg"alt="" title="" style="width: 50%;"></a>
+                                <a href="index.html" class="img-responsive"><img src="assets/images/cincoimg/icon/Logo-png.png" alt="" title=""  /></a>
                             </div>
                             <!--Right Col-->
                             <div class="right-col float-right">
@@ -259,7 +322,7 @@
         <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
         <nav class="menu-box">
-            <div class="nav-logo"><a href="index.html"><img src="assets/images/logo/cinco.jpg" alt="" title="" style="width:50%;"></a></div>
+            <div class="nav-logo"><a href="index.html"><img src="assets/images/cincoimg/icon/Logo-png.png" alt="" title="" style="width:50%;"></a></div>
             <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             <!--Social Links-->
             <div class="social-links">
@@ -289,10 +352,7 @@
                             <div class="auto-container">
                                 <div class="content right">
                                     
-                                    <!--<h2>Optometrist<br> & eyes care<br> specialist</h2>
-                                    <div class="btns-box">
-                                        <a class="btn-one" href="#"><span class="txt">Discover More<i class="fa fa-angle-double-right round" aria-hidden="true"></i></span></a>
-                                    </div>-->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -312,12 +372,14 @@
            <div class="row">
                     <div class="  col-lg-12 col-md-12 col-sm-12 ">
                         <div class="owl-carousel">
-                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/PPC-logo.png" alt="Image 1" 
-                                    style="width:50%; " /></div>
-                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/csk-dfc.png"  alt="Image 1" style="width:50%" /></div>
-                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/Dalmia-Cement.jpg" alt="Image 1" style="width:50%" /></div>
-                         
-                                <div class="item" style="margin-top:60px;"><img src="assets/images/cincoimg/logo/brila shakti.png" alt="Image 1" style="width:50%" /></div>
+                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/dc(2).jpeg" alt="Image 1"  /></div>
+                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/kcp (1).jpeg"  alt="Image 1"  /></div>
+								 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/anjani.png" alt="Image 1" /></div> 
+                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/ra(5).jpeg" alt="Image 1"  /></div>                    
+                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/birla.jpg" alt="Image 1"  /></div>
+								<div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/SAGAR-CEMENT.png" alt="Image 1"  /></div>
+                                
+                                
                                 
                                 
                         </div>
@@ -329,25 +391,24 @@
 </section>
 
 <!--Start Welcome Area-->
-<section class="welcome-area" id="about">
+<section class="welcome-area" id="about" >
     <div class="container"> 
                      <h2 style="text-align:center;">About Us</h2>
-        <div class="row">
+        <div class="row" style="margin-top:25px">
            
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" >
                 <div class="">
-                    <img src="assets/images/cincoimg/main/mukkla.png" alt="Awesome Image" style="margin:45px;">
+                    <img src="assets/images/cincoimg/main/founders.jpeg" alt="Awesome Image" width="100%" height="300px" />
                    
                 </div>
             </div>
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8" style="margin-top:65px;">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
                     <div class="image2">
                        <!-- <img src="assets/images/resources/welcome-2.jpg" alt="Awesome Image">-->
-                       <p style="text-align:justify;color:black;">Cinco Enterprises is a 4 years 6 months old Partnership Firm incorporated on 02-Feb-2019, having its registered office located at 8-7-177/28/Nr, Swarnadhama Nagar, Old Bowenpally, Hyderabad, Telangana.Cinco Enterprises is classified as Micro enterprise in the financial year 2023-24. It has its unit situated at Hyderabad, Telangana.</p>
-                       <p style="text-align:justify;color:black;">
-                        Cinco Enterprises, we are into wholesale and Nontrade cement distribution. We can supply cement to all types Government and Private civil contractors, RMC units, Precast units, cement brick manufacturers, cement pole and pipe manufacturers, High rise apartments etc for entire South India including Maharastra.
-
-                       </p>
+                       <p style="text-align:justify;color:black;">CinCo Enterprises is a firm incorporated in the year 2019, having registered address at Hyderabad, Telangana.</p>
+                       <p style="text-align:justify;color:black;">CinCo Enterprises, we are one of the major Multi Brand cement distributors in NONTRADE & WHOLESALE.</p>
+					     <p style="text-align:justify;color:black;">We can supply Cement to Retailers at Hyderabad, Rangareddy and Medak Districts.</p>
+						   <p style="text-align:justify;color:black;">In Nontrade, we supply cement to all types of Government & Private Civil Contractors, RMC Units, Precast Units, Brick Manufacturers, Pole Manufacturers, Pipe Manufacturers, High Rise Apartments.</p>
                     </div>
                 </div>    
          
@@ -368,9 +429,9 @@
 
 <section class="contact-form-style1-area contact-page" id="contact">
                                      
-    <div class="container" >
-                           <h2 style="text-align:center">contact</h2>  
-        <div class="row">
+    <div class="container">
+                           <h2 style="text-align:center;margin-bottom:30px" >Contact</h2>  
+        <div class="row" >
             
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" >
                 <div class="contact-form contact-page">
@@ -405,7 +466,7 @@
                                 <div class="button-box">
                                     <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
                                     <button class="btn-one" type="submit" data-loading-text="Please wait...">
-                                        <span class="txt">Send Massage<i class="fa fa-angle-double-right round" aria-hidden="true"></i></span>
+                                        <span class="txt">Send Message<i class="fa fa-angle-double-right round" aria-hidden="true"></i></span>
                                     </button>    
                                 </div>
                             </div>
@@ -441,11 +502,10 @@
                     <div class="single-footer-widget marbtm">
                         <div class="our-company-info">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/images/logo/cinco.jpg" alt="Awesome Footer Logo" title="Logo" 
-                                    style="width:20%"></a>    
+                                <a href="index.html"><img src="assets/images/cincoimg/icon/Logo-png.png" alt="Awesome Footer Logo" title="Logo"  /></a>    
                             </div>
                             <div class="text">
-                                <p style="color:white;">Cinco Enterprises is classified as Micro enterprise in the financial year 2023-24. It has its unit situated at Hyderabad, Telangana.</p>
+                                <p style="color:black;">CinCo Enterprises is a firm incorporated in the year 2019, having registered address at Hyderabad, Telangana.</p>
                             </div>
                            <!-- <div class="btns-box">
                                 <a class="btn-one style2" href="#">
@@ -469,7 +529,7 @@
                                            
                                             <li ><a href="#home">Home</a></li>   
                                             <li ><a href="#about">About Us</a></li>             
-                                            <li ><a href="#">Services</a></li>            
+                                                       
                                             <li ><a href="#contact">Contact</a></li>             
                                             <li><a href="#map">Site Map</a></li>                        
                                         </ul>
@@ -495,7 +555,7 @@
                                     <div class="icon">
                                         <span class="icon-telephone thm-clr"></span>
                                     </div>
-                                    <div class="text" style="color:white;">
+                                    <div class="text">
                                         <p><a href="tel:+919100338800">+91 91003 38800</a></p>
                                         <p><a href="tel:+918008501012">+91 80085 01012</a></p>
                                     </div>
@@ -514,7 +574,7 @@
                                         <span class="icon-pin-1 thm-clr"></span>
                                     </div>
                                     <div class="text">
-                                        <p style="color:white;">8/7/171, 28, NR, Ramraj Nagar Colony, Swarnadhama Nagar, Old Bowenpally, Hyderabad, Secunderabad, Telangana 500011</p>
+                                        <p style="color:black;">8/7/171, 28, NR, Ramraj Nagar Colony, Swarnadhama Nagar, Old Bowenpally, Hyderabad, Secunderabad, Telangana 500011</p>
                                     </div>
                                 </li> 
                             </ul>
@@ -530,7 +590,7 @@
         <div class="container">
             <div class="outer-box">
                 <div class="copyright-text text-center">
-                    <p>&copy;  2023  <a href="#">Cinco Enterprises</a></p>
+                    <p><span style="color:black;">&copy;  2023 </span><a href="#">Cinco Enterprises</a></p>
                 </div>
             </div>    
         </div>    
