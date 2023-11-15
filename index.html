@@ -650,12 +650,7 @@ color: black;
 <script src="assets/js/parallax.min.js"></script>
 <script src="assets/js/jquery.tinyscrollbar.js"></script>
 <script src="assets/js/jQuery.style.switcher.min.js"></script>
-<script src="
-https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
-" rel="stylesheet">
+
 
 
 <!-- thm custom script -->
@@ -705,11 +700,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
 
     fetch("https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook", requestOptions)
       .then(response => response.text())
-      .then(result => Swal.fire({
-                      title: "Welcome!",
-                      text: "Thank You For Reaching Out !",
-                      icon: "success"
-                    }) );
+      .then(result => alert("submited sucessfully"))
       .catch(error => console.log('error', error));
 
     document.getElementById("contactForm").reset();
