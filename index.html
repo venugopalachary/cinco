@@ -671,7 +671,7 @@ color: black;
 
            var subject =$('#form_subject').val();
 
-       alert("hello");
+      
 
 
 
@@ -680,13 +680,12 @@ color: black;
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
-      "name": "Tony Stark",
-      "email": "tony@avengers.com",
-      "phone": "+16262223333",
-      "display_name": "Tony",
+      "name": name,
+      "email": email,
+      "phone": phone,
+      "display_name": "Website Leads",
       "other_fields": {
-        "Address": "Avengers head querters",
-        "income": "A lot"
+        "subject":subject
       }
     });
 
