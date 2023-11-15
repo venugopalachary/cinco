@@ -655,6 +655,7 @@ color: black;
 <!-- thm custom script -->
 <script src="assets/js/custom.js"></script>
 
+
 <script>
     $(document).ready(function(){
 
@@ -672,110 +673,46 @@ color: black;
            var subject =$('#form_subject').val();
 
 
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
 
+            var raw = JSON.stringify({
+              "name": "Tony Stark",
+              "email": "tony@avengers.com",
+              "phone": "+16262223333",
+              "display_name": "Tony",
+              "other_fields": {
+                "Address": "Avengers head querters",
+                "income": "A lot"
+              }
+            });
 
-       /*    var settings = {
-          "url": "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook",
-          "method": "POST",
-          "timeout": 0,
-          "headers": {
-            "Content-Type": "application/json"
-          },
-          "data": JSON.stringify({
-            "name": name,
-            "email": email,
-            "phone": phone,
-            "display_name": "Lead From Website",
-            "other_fields": {
-              "Message": subject
-            
-            }
-          }),
-        };
+            var requestOptions = {
+              method: 'POST',
+              headers: myHeaders,
+              body: raw,
+              redirect: 'follow'
+            };
 
-        $.ajax(settings).done(function (response) {
-          console.log(response);
-          alert(response);
-        });
-*/
-
-
-
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({
-      "name": "Tony Stark",
-      "email": "tony@avengers.com",
-      "phone": "+16262223333",
-      "display_name": "Tony",
-      "other_fields": {
-        "Address": "Avengers head querters",
-        "income": "A lot"
-      }
-    });
-
-    var requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
-    };
-
-    fetch("{{ webhook_url }}", requestOptions)
-      .then(response => response.text())
-      .then(result => console.log(result))
-      .catch(error => console.log('error', error));
+            fetch("https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook", requestOptions)
+              .then(response => response.text())
+              .then(result => console.log(result))
+              .catch(error => console.log('error', error));
 
 
 
+               });
 
+                  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       });
-
-          
-       
-
-
-
-
-
-
-
-        $('.owl-carousel').owlCarousel({
-            items: 3, // Number of items to display in the carousel
-            loop: true, // Loop the carousel
-            autoplay: true, // Autoplay the carousel
-            autoplayTimeout: 3000, // Autoplay interval in milliseconds
-            nav: true, // Show navigation arrows
-            dots: true // Show navigation dots
-        });
+                $('.owl-carousel').owlCarousel({
+                    items: 3, // Number of items to display in the carousel
+                    loop: true, // Loop the carousel
+                    autoplay: true, // Autoplay the carousel
+                    autoplayTimeout: 3000, // Autoplay interval in milliseconds
+                    nav: true, // Show navigation arrows
+                    dots: true // Show navigation dots
+                });
 
 
 
