@@ -164,7 +164,7 @@ img {
     right: 0;
     content: "";
     background-color: #ffffffd9;
-	color: black;
+    color: black;
     z-index: -1;
 }
 .single-footer-widget .title h3 {
@@ -383,10 +383,10 @@ color: black;
                         <div class="owl-carousel">
                                 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/dc(2).jpeg" alt="Image 1"  /></div>
                                 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/kcp (1).jpeg"  alt="Image 1"  /></div>
-								 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/anjani.png" alt="Image 1" /></div> 
+                                 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/anjani.png" alt="Image 1" /></div> 
                                 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/ra(5).jpeg" alt="Image 1"  /></div>                    
                                 <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/birla.jpg" alt="Image 1"  /></div>
-								<div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/SAGAR-CEMENT.png" alt="Image 1"  /></div>
+                                <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/SAGAR-CEMENT.png" alt="Image 1"  /></div>
                                 
                              <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/birlashakti.png" alt="Image 1" /></div> 
                              <div class="item" style="margin:10px;"><img src="assets/images/cincoimg/logo/Dalmia-Cement.jpg" alt="Image 1"  /></div>
@@ -417,8 +417,8 @@ color: black;
                        <!-- <img src="assets/images/resources/welcome-2.jpg" alt="Awesome Image">-->
                        <p style="text-align:justify;color:black;">CinCo Enterprises is a firm incorporated in the year 2019, having registered address at Hyderabad, Telangana.</p>
                        <p style="text-align:justify;color:black;">CinCo Enterprises, we are one of the major Multi Brand cement distributors in NONTRADE & WHOLESALE.</p>
-					     <p style="text-align:justify;color:black;">We can supply Cement to Retailers at Hyderabad, Rangareddy and Medak Districts.</p>
-						   <p style="text-align:justify;color:black;">In Nontrade, we supply cement to all types of Government & Private Civil Contractors, RMC Units, Precast Units, Brick Manufacturers, Pole Manufacturers, Pipe Manufacturers, High Rise Apartments.</p>
+                         <p style="text-align:justify;color:black;">We can supply Cement to Retailers at Hyderabad, Rangareddy and Medak Districts.</p>
+                           <p style="text-align:justify;color:black;">In Nontrade, we supply cement to all types of Government & Private Civil Contractors, RMC Units, Precast Units, Brick Manufacturers, Pole Manufacturers, Pipe Manufacturers, High Rise Apartments.</p>
                     </div>
                 </div>    
          
@@ -655,7 +655,6 @@ color: black;
 <!-- thm custom script -->
 <script src="assets/js/custom.js"></script>
 
-
 <script>
     $(document).ready(function(){
 
@@ -673,46 +672,50 @@ color: black;
            var subject =$('#form_subject').val();
 
 
-            var myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
-
-            var raw = JSON.stringify({
-              "name": "Tony Stark",
-              "email": "tony@avengers.com",
-              "phone": "+16262223333",
-              "display_name": "Tony",
-              "other_fields": {
-                "Address": "Avengers head querters",
-                "income": "A lot"
-              }
-            });
-
-            var requestOptions = {
-              method: 'POST',
-              headers: myHeaders,
-              body: raw,
-              redirect: 'follow'
-            };
-
-            fetch("https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook", requestOptions)
-              .then(response => response.text())
-              .then(result => console.log(result))
-              .catch(error => console.log('error', error));
 
 
 
-               });
 
-                  
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
 
-                $('.owl-carousel').owlCarousel({
-                    items: 3, // Number of items to display in the carousel
-                    loop: true, // Loop the carousel
-                    autoplay: true, // Autoplay the carousel
-                    autoplayTimeout: 3000, // Autoplay interval in milliseconds
-                    nav: true, // Show navigation arrows
-                    dots: true // Show navigation dots
-                });
+    var raw = JSON.stringify({
+      "name": "Tony Stark",
+      "email": "tony@avengers.com",
+      "phone": "+16262223333",
+      "display_name": "Tony",
+      "other_fields": {
+        "Address": "Avengers head querters",
+        "income": "A lot"
+      }
+    });
+
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+
+
+
+       });
+
+          
+
+        $('.owl-carousel').owlCarousel({
+            items: 3, // Number of items to display in the carousel
+            loop: true, // Loop the carousel
+            autoplay: true, // Autoplay the carousel
+            autoplayTimeout: 3000, // Autoplay interval in milliseconds
+            nav: true, // Show navigation arrows
+            dots: true // Show navigation dots
+        });
 
 
 
