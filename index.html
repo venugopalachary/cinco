@@ -680,14 +680,10 @@ color: black;
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
-
-
-
-
       "name": name,
       "email": email,
       "phone": phone,
-      "display_name": "Tony",
+      "display_name": "Website Leads ",
       "other_fields": {
         "message": subject
       
@@ -706,7 +702,7 @@ color: black;
       .then(result => alert(result))
       .catch(error => console.log('error', error));
 
-
+    document.getElementById("contactForm").reset();
 
        });
 
