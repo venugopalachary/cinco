@@ -651,6 +651,7 @@ color: black;
 <script src="assets/js/jquery.tinyscrollbar.js"></script>
 <script src="assets/js/jQuery.style.switcher.min.js"></script>
 
+
 <!-- thm custom script -->
 <script src="assets/js/custom.js"></script>
 
@@ -673,8 +674,8 @@ color: black;
 
 
 
-           var settings = {
-          "url": "{{ https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook }}",
+       /*    var settings = {
+          "url": "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook",
           "method": "POST",
           "timeout": 0,
           "headers": {
@@ -696,6 +697,64 @@ color: black;
           console.log(response);
           alert(response);
         });
+*/
+
+
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+      "name": "Tony Stark",
+      "email": "tony@avengers.com",
+      "phone": "+16262223333",
+      "display_name": "Tony",
+      "other_fields": {
+        "Address": "Avengers head querters",
+        "income": "A lot"
+      }
+    });
+
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("{{ webhook_url }}", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
        });
