@@ -656,6 +656,38 @@ color: black;
 
 <script>
     $(document).ready(function(){
+
+          
+          var settings = {
+          "url": "{{ https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook }}",
+          "method": "POST",
+          "timeout": 0,
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "data": JSON.stringify({
+            "name": $('#form_name').val();,
+            "email": $('#form_email').val();,
+            "phone": $('#form_phone').val();,
+            "display_name": "Lead From Website",
+            "other_fields": {
+              "Message": $('#form_subject').val();
+            
+            }
+          }),
+        };
+
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+          alert(response);
+        });
+
+
+
+
+
+
+
         $('.owl-carousel').owlCarousel({
             items: 3, // Number of items to display in the carousel
             loop: true, // Loop the carousel
@@ -664,6 +696,10 @@ color: black;
             nav: true, // Show navigation arrows
             dots: true // Show navigation dots
         });
+
+
+
+
     });
 </script>
 
