@@ -452,7 +452,7 @@ color: black;
                                     <input type="text" name="form_name" id="form_name" value="" placeholder="Your name" required="">
                                 </div>
                                 <div class="input-box"> 
-                                    <input type="text" name="form_phone" id="form_phone" value="" placeholder="Phone number">
+                                    <input type="text" name="form_phone" id="form_phone" value="" placeholder="Phone number" required="">
                                 </div>     
                             </div>
                             <div class="col-xl-6 col-lg-6">
@@ -650,6 +650,12 @@ color: black;
 <script src="assets/js/parallax.min.js"></script>
 <script src="assets/js/jquery.tinyscrollbar.js"></script>
 <script src="assets/js/jQuery.style.switcher.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
+" rel="stylesheet">
 
 
 <!-- thm custom script -->
@@ -699,7 +705,11 @@ color: black;
 
     fetch("https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/6pgerl7e#generic-webhook", requestOptions)
       .then(response => response.text())
-      .then(result => alert(result))
+      .then(result => Swal.fire({
+                      title: "Welcome!",
+                      text: "Thank You For Reaching Out !",
+                      icon: "success"
+                    }) );
       .catch(error => console.log('error', error));
 
     document.getElementById("contactForm").reset();
